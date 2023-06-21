@@ -5,7 +5,7 @@ import alisados from "../../assets/img/servicios/alisado.jpg";
 const SecondSectionMobile = () => {
 	return (
 		<>
-			<div className="w-full bg-gradient-to-br h-full from-red-200 to-red-100 flex ">
+			<div className="w-full bg-gradient-to-br h-full from-red-200 to-red-100 flex rounded-lg">
 				<div className="text-xl flex flex-col gap-6 justify-center items-center text-center">
 					<img
 						src={matizadores}
@@ -23,7 +23,7 @@ const SecondSectionMobile = () => {
 					</button>
 				</div>
 			</div>
-			<div className="w-full bg-gradient-to-br h-full from-red-200 to-red-100 flex">
+			<div className="w-full bg-gradient-to-br h-full from-red-200 to-red-100 flex rounded-lg">
 				<div className="text-xl flex flex-col gap-6 justify-center items-center text-center">
 					<img
 						src={alisados}
