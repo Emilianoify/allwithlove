@@ -4,12 +4,12 @@ import { productInterface } from "../../utils/interfaces/productsInterface";
 
 const Card = ({ id, name, description, src }: productInterface) => {
 	return (
-		<div className="h-full w-full flex flex-col border rounded-t-xl gap-4  border-gray-200 md:text-xl md:w-3/4">
+		<div className="h-full w-full flex flex-col border rounded-t-xl gap-4  border-gray-200 md:text-xl md:w-3/4 hover:transition-all hover:shadow-lg hover:duration-300 hover:ease-in">
 			<Link to={`/products/${id}`}>
 				<img src={src} alt={name} className="w-full rounded-t-xl" />
 				<div className="p-2">
-					<p className="md:text-2xl">{name}</p>
-					<p className="pt-2 md:text-lg ">{description}</p>
+					<p className="md:text-2xl font-marcellus">{name}</p>
+					<p className="pt-2 md:text-base">{description}</p>
 				</div>
 			</Link>
 			<div className="flex justify-center md:p-4">

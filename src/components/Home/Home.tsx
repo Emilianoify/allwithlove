@@ -10,8 +10,10 @@ const Home = () => {
 				<section className="w-full flex justify-center bg-gradient-to-r from-[#A37F81] to-[#BA9193]">
 					<Slider />
 				</section>
-				<section className="flex flex-col py-8 w-full h-fit">
-					<p className="text-4xl font-marcellus">Productos Populares</p>
+				<section className="flex flex-col py-8 w-full h-fit  items-center">
+					<p className="text-2xl md:text-4xl font-marcellus p-4">
+						Productos Populares
+					</p>
 					<div className="grid grid-cols-2 gap-2 md:grid md:grid-cols-4 mt-4 place-items-center">
 						{mostPopular.map(({ id, name, description, src }) => (
 							<Card
