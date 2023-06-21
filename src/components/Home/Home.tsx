@@ -30,7 +30,7 @@ const Home = () => {
 						))}
 					</div>
 				</section>
-				<section className="w-full h-full  grid grid-cols-2 gap-3 place-items-center">
+				<section className="w-full h-full pb-4 grid grid-cols-2 gap-3 place-items-center">
 					{isMobile ? <SecondSectionMobile /> : <SecondSectionDesktop />}
 				</section>
 			</main>

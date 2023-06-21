@@ -10,7 +10,7 @@ const SecondSectionMobile = () => {
 					<img
 						src={matizadores}
 						alt="Matizadores"
-						className="w-full rounded-lg"
+						className="w-full h-full rounded-lg"
 					/>
 					<h2 className="text-3xl font-dancing">Productos Capilares</h2>
 					<p className="font-lato text-2xl">Con celulas madres</p>
