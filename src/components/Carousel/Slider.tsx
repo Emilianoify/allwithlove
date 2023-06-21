@@ -19,7 +19,7 @@ const Slider = () => {
 		setCurrentIndex(newIndex);
 	};
 
-	let slideInterval: NodeJS.Timeout;
+	let slideInterval: ReturnType<typeof setTimeout>;
 	const startSlider = () => {
 		slideInterval = setInterval(() => {
 			nextSlide();
