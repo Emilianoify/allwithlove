@@ -15,7 +15,7 @@ const Card = ({ id, name, description, src }: productInterface) => {
 			<div className="flex justify-center md:p-4">
 				<button
 					type="button"
-					className="w-fit border rounded-lg p-2 transition-all duration-200 ease-in-out hover:bg-pink-200 hover:text-white hover:font-bold"
+					className="w-full border rounded-lg p-2 transition-all duration-200 ease-in-out hover:bg-pink-200 hover:text-white hover:font-bold"
 				>
 					<a
 						className="flex gap-2 items-center"

@@ -1,8 +1,7 @@
 import { isMobile, mostPopular } from "../../utils/const";
 import Card from "../Card/Card";
 import Slider from "../Carousel/Slider";
-import SecondSectionDesktop from "./SecondSectionDesktop";
-import SecondSectionMobile from "./SecondSectionMobile";
+import SecondSection from "./SecondSection";
 const Home = () => {
 	return (
 		<>
@@ -11,10 +10,10 @@ const Home = () => {
 					<Slider />
 				</section>
 				<section className="flex flex-col py-8 w-full h-fit  items-center">
-					<p className="text-2xl md:text-4xl font-marcellus p-4">
+					<p className="text-2xl lg:text-4xl font-marcellus p-4">
 						Productos Populares
 					</p>
-					<div className="grid grid-cols-2 gap-2 md:grid md:grid-cols-4 mt-4 place-items-center">
+					<div className="grid grid-cols-2 gap-2 lg:grid lg:grid-cols-4 mt-4 place-items-center">
 						{mostPopular.map(({ id, name, description, src }) => (
 							<Card
 								id={id}
@@ -30,8 +29,8 @@ const Home = () => {
 						))}
 					</div>
 				</section>
-				<section className="w-full h-full pb-4 grid grid-cols-2 gap-3 place-items-center">
-					{isMobile ? <SecondSectionMobile /> : <SecondSectionDesktop />}
+				<section className="flex flex-col gap-4 lg:grid lg:grid-cols-2 pb-4 place-items-center h-full">
+					<SecondSection />
 				</section>
 			</main>
 		</>
