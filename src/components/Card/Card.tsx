@@ -8,11 +8,14 @@ const Card = ({ id, name, src }: productInterface) => {
 			<Link to={`/products/${id}`}>
 				<img src={src} alt={name} className="rounded-t-xl" />
 			</Link>
-			<div className="flex flex-col h-full w-full justify-center px-2 md:p-4">
-				<p className="mb-2 text-2xl font-marcellus tracking-tight">{name}</p>
+			<div className="flex flex-col h-full w-full justify-between px-2 md:p-4">
+				<div className="flex flex-col">
+					<p className="mb-2 text-2xl font-marcellus tracking-tight">{name}</p>
+					<div className="flex-grow" />
+				</div>
 				<button
 					type="button"
-					className="w-full border rounded-lg p-2 transition-all duration-200 ease-in-out hover:bg-pink-200 hover:text-white hover:font-bold"
+					className="w-full border rounded-lg  transition-all duration-200 ease-in-out hover:bg-pink-200 hover:text-white hover:font-bold"
 				>
 					<a
 						className="flex gap-2 justify-center items-center"
@@ -20,7 +23,7 @@ const Card = ({ id, name, src }: productInterface) => {
 						href={`https://api.whatsapp.com/send?phone=5491133111585&text=¡Hola!Estoy interesado en comprar ${name}. Por favor, envíenme más información.`}
 						rel="noreferrer"
 					>
-						<BsCart /> Comprar ahora
+						<BsCart /> Comprar ahora
 					</a>
 				</button>
 			</div>
