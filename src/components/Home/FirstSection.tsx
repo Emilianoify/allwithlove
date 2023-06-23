@@ -1,7 +1,7 @@
 const FirstSection = () => {
 	return (
 		<>
-			<section className="w-full h-full flex justify-center items-center font-marcellus animate-fade-down animate-once animate-duration-[1600ms]">
+			<section className="w-full h-full flex justify-center items-center font-marcellus animate-fade-down animate-once animate-duration-[1600ms] relative">
 				<div className="flex flex-col justify-center w-3/4 h-full text-left">
 					<span className="text-base lg:text-xl">
 						Y si no es ahora ¿Cuando?
