@@ -5,7 +5,7 @@ import alisados from "../../assets/img/servicios/alisado.jpg";
 const SecondSection = () => {
 	return (
 		<>
-			<div className="w-full h-full bg-gradient-to-r from-rose-400 to-rose-300 text-white grid grid-cols-2 md:place-items-center md:p-0">
+			<div className="w-full h-full bg-gradient-to-r from-rose-400 to-rose-300 text-white grid grid-cols-2 animate-fade-right animate-once animate-duration-[1500ms] md:place-items-center md:p-0">
 				<div className="w-full h-full text-base flex flex-col justify-center items-center text-center p-2 gap-4 md:gap-12">
 					<h2 className="text-2xl px-4 font-dancing md:text-5xl">
 						Productos Capilares
@@ -27,7 +27,7 @@ const SecondSection = () => {
 					/>
 				</div>
 			</div>
-			<div className="w-full h-full bg-gradient-to-r from-rose-300 to-rose-400 text-white grid grid-cols-2 md:place-items-center md:p-0">
+			<div className="w-full h-full bg-gradient-to-r from-rose-300 to-rose-400 text-white grid grid-cols-2 animate-fade-left animate-once animate-duration-[1500ms] md:place-items-center md:p-0">
 				<div className="h-full w-full">
 					<img
 						src={alisados}

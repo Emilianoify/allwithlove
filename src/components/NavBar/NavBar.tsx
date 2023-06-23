@@ -51,7 +51,7 @@ const NavBar = () => {
 	];
 
 	return (
-		<header className="h-20 bg-white flex justify-around shadow-md items-center px-4 font-monserrat">
+		<header className="h-20 bg-white flex justify-around shadow-md items-center px-4 font-monserrat animate-fade animate-once animate-duration-[1400ms]">
 			{isMobile ? (
 				<>
 					<div className="text-center">
