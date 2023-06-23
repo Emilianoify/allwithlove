@@ -6,8 +6,8 @@ import SecondSection from "./SecondSection";
 const Home = () => {
 	return (
 		<>
-			<main className="w-full flex flex-col justify-center px-4 lg:px-6 lg:h-full font-monserrat relative">
-				<section className="w-full h-[500px] lg:h-[800px] flex items-center justify-center text-white bg-gradient-to-tl from-red-200 via-red-300 to-red-300 font-marcellus">
+			<main className="w-full flex flex-col justify-center px-4 lg:px-6 lg:h-full font-monserrat">
+				<section className="w-full h-[500px] lg:h-[800px] flex items-center justify-center text-white bg-gradient-to-tl from-red-200 via-red-300 to-red-300 relative font-marcellus">
 					<FirstSection />
 				</section>
 				<section className="flex flex-col py-8 gap-2 w-full h-fit items-center animate-fade-down animate-once animate-duration-800 animate-ease-in">
