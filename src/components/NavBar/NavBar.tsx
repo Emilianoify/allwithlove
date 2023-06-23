@@ -61,7 +61,7 @@ const NavBar = () => {
 					<div
 						onClick={handleOpen}
 						onKeyUp={handleOpen}
-						className="cursor-pointer z-10"
+						className="cursor-pointer"
 					>
 						{isOpen ? null : <GoThreeBars size={40} />}
 					</div>
