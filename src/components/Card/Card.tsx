@@ -1,12 +1,15 @@
+import { productInterface } from "../../utils/interfaces/productsInterface";
+// Card.js
 import { BsCart } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { productInterface } from "../../utils/interfaces/productsInterface";
 
 const Card = ({ id, name, src }: productInterface) => {
 	return (
 		<div className="h-full w-full flex flex-col border rounded-t-xl gap-4 border-gray-200 md:text-xl hover:transition-all hover:shadow-lg hover:duration-300 hover:ease-in">
-			<Link to={`/products/${id}`}>
-				<img src={src} alt={name} className="rounded-t-xl" />
+			<Link to={`/products/${id}`} className="flex-grow-0">
+				<div className="flex items-center justify-center h-64 md:h-[440px] 2xl:h-[660px] overflow-hidden">
+					<img src={src} alt={name} className="w-full h-full rounded-t-md" />
+				</div>
 			</Link>
 			<div className="flex flex-col h-full w-full justify-between px-2 md:p-4">
 				<div className="flex flex-col">
@@ -15,7 +18,7 @@ const Card = ({ id, name, src }: productInterface) => {
 				</div>
 				<button
 					type="button"
-					className="w-full border rounded-lg  transition-all duration-200 ease-in-out hover:bg-pink-200 hover:text-white hover:font-bold"
+					className="w-full border rounded-lg p-2 transition-all duration-200 ease-in-out hover:bg-pink-200 hover:text-white hover:font-bold"
 				>
 					<a
 						className="flex gap-2 justify-center items-center"

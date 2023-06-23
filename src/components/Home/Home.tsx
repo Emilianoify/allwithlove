@@ -12,7 +12,16 @@ const Home = () => {
 				<section className="flex flex-col py-8 gap-2 w-full h-fit items-center">
 					<span className="text-slate-600">Productos Populares</span>
 					<p className="text-3xl lg:text-5xl font-marcellus">Mas Vendidos</p>
-					<div className="grid grid-cols-2 gap-2 lg:gap-8 lg:grid lg:grid-cols-4 mt-4 place-items-center">
+					<div className="grid grid-cols-2 gap-2 mt-4 place-items-center lg:gap-8 lg:grid lg:grid-cols-4">
+						{featuredProducts.map(({ id, name, src }) => (
+							<Card id={id} key={id} name={name} src={src} />
+						))}
+					</div>
+				</section>
+				<section className="flex flex-col py-8 gap-2 w-full h-fit items-center">
+					<span className="text-slate-600">Servicios Populares</span>
+					<p className="text-3xl lg:text-5xl font-marcellus">Mas Solicitados</p>
+					<div className="grid grid-cols-2 gap-2 mt-4 place-items-center lg:gap-8 lg:grid lg:grid-cols-4">
 						{featuredProducts.map(({ id, name, src }) => (
 							<Card id={id} key={id} name={name} src={src} />
 						))}
