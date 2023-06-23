@@ -67,7 +67,7 @@ const NavBar = () => {
 					</div>
 
 					{isOpen && (
-						<div className="flex flex-col w-full z-10 h-fit absolute top-0 left-0 bg-white gap-6 text-xl p-4">
+						<div className="flex flex-col w-full z-10 h-fit absolute top-0 left-0 bg-white gap-6 text-xl p-4 animate-fade-right animate-once animate-duration-[800ms]">
 							<button
 								type="button"
 								onClick={handleOpen}
@@ -75,19 +75,17 @@ const NavBar = () => {
 							>
 								<GrClose size={30} />
 							</button>
-							<div className="">
-								<ul className="flex flex-col gap-6 ">
-									{pagesMobile.map(({ id, href, name, icon }) => (
-										<li
-											key={id}
-											className="hover:text-purple-300 border-blue-200 transition-all ease-in duration-300 hover:scale:110 flex gap-2"
-										>
-											{icon}
-											<Link to={href}>{name}</Link>
-										</li>
-									))}
-								</ul>
-							</div>
+							<ul className="flex flex-col gap-6">
+								{pagesMobile.map(({ id, href, name, icon }) => (
+									<li
+										key={id}
+										className="hover:text-purple-300 border-blue-200 transition-all ease-in duration-300 hover:scale:110 flex gap-2"
+									>
+										{icon}
+										<Link to={href}>{name}</Link>
+									</li>
+								))}
+							</ul>
 						</div>
 					)}
 				</>
