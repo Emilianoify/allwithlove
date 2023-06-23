@@ -1,5 +1,6 @@
-import { featuredProducts } from "../../utils/const";
-import Card from "../Card/Card";
+import { featuredProducts, featuredServices } from "../../utils/const";
+import ProductsCard from "../Products/ProductsCard";
+import ServicesCard from "../Services/ServicesCard";
 import FirstSection from "./FirstSection";
 import SecondSection from "./SecondSection";
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
 					<p className="text-3xl lg:text-5xl font-marcellus">Mas Vendidos</p>
 					<div className="grid grid-cols-2 gap-2 mt-4 place-items-center lg:gap-8 lg:grid lg:grid-cols-4">
 						{featuredProducts.map(({ id, name, src }) => (
-							<Card id={id} key={id} name={name} src={src} />
+							<ProductsCard id={id} key={id} name={name} src={src} />
 						))}
 					</div>
 				</section>
@@ -22,8 +23,8 @@ const Home = () => {
 					<span className="text-slate-600">Servicios Populares</span>
 					<p className="text-3xl lg:text-5xl font-marcellus">Mas Solicitados</p>
 					<div className="grid grid-cols-2 gap-2 mt-4 place-items-center lg:gap-8 lg:grid lg:grid-cols-4">
-						{featuredProducts.map(({ id, name, src }) => (
-							<Card id={id} key={id} name={name} src={src} />
+						{featuredServices.map(({ id, name, src }) => (
+							<ServicesCard id={id} key={id} name={name} src={src} />
 						))}
 					</div>
 				</section>
