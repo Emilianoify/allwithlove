@@ -10,7 +10,13 @@ const Footer = () => {
 						<h5 className="mb-2 text-3xl font-lato">Redes Sociales</h5>
 						<div className="flex justify-center items-center">
 							<button type="button" className="rounded-full w-fit">
-								<img src={instagram} alt="Instagram" />
+								<a
+									href="https://www.instagram.com/all.with.lovee/"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<img src={instagram} alt="Instagram" />
+								</a>
 							</button>
 						</div>
 					</div>
