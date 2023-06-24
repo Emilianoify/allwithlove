@@ -6,7 +6,7 @@ const ProductsCard = ({ id, name, src }: productInterface) => {
 	return (
 		<div className="h-full w-full flex flex-col border rounded-t-xl gap-4 border-gray-200 md:text-xl hover:transition-all hover:shadow-lg hover:duration-300 hover:ease-in">
 			<Link to={`/products/${id}`} className="flex-grow-0">
-				<div className="flex items-center justify-center h-64 md:h-[440px] 2xl:h-[620px] overflow-hidden">
+				<div className="flex items-center justify-center h-60 md:h-[440px] 2xl:h-[620px] overflow-hidden">
 					<img src={src} alt={name} className="w-full h-full rounded-t-md" />
 				</div>
 			</Link>
