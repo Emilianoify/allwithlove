@@ -2,7 +2,7 @@ import { BsCart } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { ProductDetails } from "../../utils/interfaces/productsInterface";
 
-const ProductsCard = ({ id, name, src }: productInterface) => {
+const ProductsCard = ({ id, name, src }: ProductDetails) => {
 	return (
 		<div className="h-full w-full flex flex-col border rounded-t-xl gap-4 border-gray-200 md:text-xl hover:transition-all hover:shadow-lg hover:duration-300 hover:ease-in">
 			<Link to={`/products/${id}`} className="flex-grow-0">
