@@ -14,6 +14,35 @@ import trenzaBox from "../assets/img/servicios/trenzabox.jpg";
 //
 export const isMobile = window.innerWidth < 1024;
 //Paginas de navbar
+export const pagesName = [
+	{
+		id: 1,
+		href: "/",
+		name: "Inicio",
+	},
+	{
+		id: 2,
+		href: "products",
+		name: "Productos",
+	},
+	{
+		id: 3,
+		href: "services",
+		name: "Servicios",
+	},
+	{
+		id: 4,
+		href: "contact",
+		name: "Contacto",
+	},
+	{
+		id: 5,
+		href: "about",
+		name: "Sobre Nosotros",
+	},
+];
+
+//Productos del local
 // Productos del local
 export const products = [
 	{
@@ -152,6 +181,7 @@ export const products = [
 	},
 ];
 
+
 //Seleccion de productos segun pos de array para el featured
 const selectedProducts = [1, 5, 3, 4];
 export const featuredProducts = selectedProducts.map((pos) => products[pos]);
@@ -159,25 +189,25 @@ export const featuredProducts = selectedProducts.map((pos) => products[pos]);
 //Servicios
 export const services = [
 	{
-		id: "1",
+		id: 1,
 		src: alisado,
 		name: "Alisado Japones",
 		description: "",
 	},
 	{
-		id: "2",
+		id: 2,
 		src: trenzaBox,
 		name: "Trenzas Boxeador",
 		description: "",
 	},
 	{
-		id: "3",
+		id: 3,
 		src: cauterizacion,
 		name: "Cauterizacion",
 		description: "",
 	},
 	{
-		id: "4",
+		id: 4,
 		src: botox,
 		name: "Botox",
 		description: "",
