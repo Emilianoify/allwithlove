@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { ProductsInterface } from "../../utils/interfaces/productsInterface";
+import { products } from "../../utils/const";
 
 const initialState: ProductsInterface = {
-	allProducts: [],
-	startedProducts: [],
+	allProducts: products,
+	startedProducts: products,
 	productDetail: {
 		id: "",
 		name: "",
@@ -15,8 +16,13 @@ export const productSlice = createSlice({
 	name: "product",
 	initialState,
 	reducers: {
+		getProducts: (state, {payload})=>{
+				state.allProducts = products;
+				state.startedProducts = products;
+		},
 		sortAlphabetically: (state, { payload }) => {
-			state.allProducts?.sort((a, b): number => {
+			state.allProducts.sort((a, b): number => {
+				
 				if (payload === "A-z") {
 					if (a.name < b.name) return -1;
 					if (b.name < a.name) return 1;

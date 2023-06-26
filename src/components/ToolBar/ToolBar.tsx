@@ -34,6 +34,7 @@ const ToolBar = ({ setCurrentPage, setOrder }: Props): JSX.Element => {
 						}}
 						defaultValue="Order By:"
 					>
+						<option value="none" selected disabled>Ordenar por:</option>
 						<option value="A-z">A-z</option>
 						<option value="Z-a">Z-a</option>
 					</select>
@@ -59,4 +60,4 @@ export default ToolBar;
 
 /*onChange={(e) => {
 							handleFilter(e);
-						}}*/
+						}}*/ 

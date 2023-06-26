@@ -1,15 +1,18 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { isMobile, products } from "../../utils/const";
+import { isMobile } from "../../utils/const";
 import { setLocalItems } from "../../utils/utils";
 import Paginate from "../Paginate/Paginate";
 import ToolBar from "../ToolBar/ToolBar";
 import ProductsCard from "./ProductsCard";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks/hooksRedux";
+import { getProducts } from "../../redux/products/actions";
 
 const Products = () => {
 	const [currentPage, setCurrentPage] = useState(0);
 	const [order, setOrder] = useState("");
-
+	const dispatch = useAppDispatch()
+	const products = useAppSelector(state => state.products.allProducts)
 	// Desktop Const
 	const postPerPage = 8;
 	const allPostPage = currentPage * postPerPage;
@@ -27,6 +30,7 @@ const Products = () => {
 	const totalMobilePages = Math.ceil(products.length / postPerMobilePage);
 
 	useEffect(() => {
+		dispatch(getProducts)
 		setLocalItems("products", products);
 		setCurrentPage(1);
 	}, [products, order]);
