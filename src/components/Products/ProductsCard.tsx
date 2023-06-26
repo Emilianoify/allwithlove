@@ -1,6 +1,6 @@
 import { BsCart } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { productInterface } from "../../utils/interfaces/productsInterface";
+import { ProductDetails } from "../../utils/interfaces/productsInterface";
 
 const ProductsCard = ({ id, name, src }: productInterface) => {
 	return (
