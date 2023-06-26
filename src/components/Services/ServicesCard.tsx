@@ -1,9 +1,9 @@
-import { productInterface } from "../../utils/interfaces/productsInterface";
+import { serviceDetails } from "../../utils/interfaces/servicesInterface";
 // Card.js
 import { BsCart } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-const ServicesCard = ({ id, name, src }: productInterface) => {
+const ServicesCard = ({ id, name, src }: serviceDetails) => {
 	return (
 		<div className="h-full w-full flex flex-col border rounded-t-xl gap-4 border-gray-200 md:text-xl hover:transition-all hover:shadow-lg hover:duration-300 hover:ease-in">
 			<Link to={`/services/${id}`} className="flex-grow-0">
