@@ -185,7 +185,7 @@ const selectedProducts = [1, 5, 3, 4];
 export const featuredProducts = selectedProducts.map((pos) => products[pos]);
 
 //Servicios
-const services = [
+export const services = [
 	{
 		id: 1,
 		src: alisado,

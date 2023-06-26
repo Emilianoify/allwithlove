@@ -1,6 +1,12 @@
-export interface productInterface {
+export interface ProductDetails {
 	src: string;
-	id: number;
+	id: string;
 	description?: string;
 	name: string;
+}
+
+export interface ProductsInterface {
+	startedProducts: ProductDetails[];
+	allProducts: ProductDetails[];
+	productDetail: ProductDetails;
 }
