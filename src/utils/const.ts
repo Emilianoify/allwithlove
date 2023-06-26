@@ -189,25 +189,25 @@ export const featuredProducts = selectedProducts.map((pos) => products[pos]);
 //Servicios
 export const services = [
 	{
-		id: 1,
+		id: "1",
 		src: alisado,
 		name: "Alisado Japones",
 		description: "",
 	},
 	{
-		id: 2,
+		id: "2",
 		src: trenzaBox,
 		name: "Trenzas Boxeador",
 		description: "",
 	},
 	{
-		id: 3,
+		id: "3",
 		src: cauterizacion,
 		name: "Cauterizacion",
 		description: "",
 	},
 	{
-		id: 4,
+		id: "4",
 		src: botox,
 		name: "Botox",
 		description: "",
