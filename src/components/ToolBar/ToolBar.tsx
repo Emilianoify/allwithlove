@@ -17,10 +17,10 @@ const ToolBar = ({ setCurrentPage, setOrder }: Props): JSX.Element => {
 		}
 	};
 
-	const handleFilter = (e: React.ChangeEvent<HTMLSelectElement>): void => {
+	/*const handleFilter = (e: React.ChangeEvent<HTMLSelectElement>): void => {
 		//dispatch(filterByGenre(e.target.value));
 		setCurrentPage(1);
-	};
+	};*/
 
 	return (
 		<div className="flex items-center justify-center w-full text-white">
@@ -42,9 +42,7 @@ const ToolBar = ({ setCurrentPage, setOrder }: Props): JSX.Element => {
 				<div className="filterContainer">
 					<span className="mr-4">Filtrar por:</span>
 					<select
-						onChange={(e) => {
-							handleFilter(e);
-						}}
+						
 						className="bg-gray-50 text-center border-gray-300 text-gray-900 rounded-lg  focus:ring-blue-500 focus:border-blue-500  w-full"
 					>
 						<option value="EmptyFilters">Sin filtros</option>
@@ -58,3 +56,7 @@ const ToolBar = ({ setCurrentPage, setOrder }: Props): JSX.Element => {
 };
 
 export default ToolBar;
+
+/*onChange={(e) => {
+							handleFilter(e);
+						}}*/
