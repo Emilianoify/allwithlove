@@ -1,6 +1,6 @@
 import { AnyAction, ThunkAction } from "@reduxjs/toolkit";
 import { RootState } from "../store";
-import reducer from "./slice";
+import { reducer } from "./slice";
 
 export const getServices = (): ThunkAction<
 	Promise<void>,
@@ -14,12 +14,12 @@ export const getServices = (): ThunkAction<
 			const data = await response.json();
 			dispatch(reducer.getServices(data));
 		} catch (error) {
-			alert(error)
+			alert(error);
 		}
 	};
 };
 
-export const orderByName = (
+export const orderServicesByName = (
 	data: string,
 ): ThunkAction<void, RootState, unknown, AnyAction> => {
 	return (dispatch) => {

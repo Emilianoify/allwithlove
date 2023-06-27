@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { ProductsInterface } from "../../utils/interfaces/productsInterface";
 import { products } from "../../utils/const";
+import { ProductsInterface } from "../../utils/interfaces/productsInterface";
 
 const initialState: ProductsInterface = {
 	allProducts: products,
@@ -16,13 +16,12 @@ export const productSlice = createSlice({
 	name: "product",
 	initialState,
 	reducers: {
-		getProducts: (state)=>{
-				state.allProducts = products;
-				state.startedProducts = products;
+		getProducts: (state) => {
+			state.allProducts = products;
+			state.startedProducts = products;
 		},
 		sortAlphabetically: (state, { payload }) => {
 			state.allProducts.sort((a, b): number => {
-				
 				if (payload === "A-z") {
 					if (a.name < b.name) return -1;
 					if (b.name < a.name) return 1;
