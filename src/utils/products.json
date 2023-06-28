@@ -1,4 +1,3 @@
-
 [
 	{
 		"id": "1",
@@ -42,11 +41,21 @@
 		"description": "Scrunchies de tela estampada, no dañan ni quiebran el cabello y lo mantienen hidratado. Varios modelos. Lo que tu cabello necesita."
 	},
 	{
+		"id": "20",
+		"src": "scrunchies",
+		"name": "Scrunchies con lazo",
+		"description": "Vinchas Scrunchies de tela estampada, no dañan ni quiebran el cabello y lo mantienen hidratado. Varios modelos. Lo que tu cabello necesita."
+	},
+	{
+		"id": "17",
+		"src": "scrunchies",
+		"name": "Vinchas scrunchies",
+		"description": "Vinchas Scrunchies de tela estampada, no dañan ni quiebran el cabello y lo mantienen hidratado. Varios modelos. Lo que tu cabello necesita."
+	},
+	{
 		"id": "7",
 		"src": "scrunchies",
-	
-
-	"name": "Protector Termico",
+		"name": "Protector Termico",
 		"description": "Repara y protege el cabello, aporta brillo y suavidad sellando las cuticulas, reduciendo el frizz. Protector Termico Hidratante.",
 		"applicationMode": "Agitar y aplicar sobre el cabello humedo o seco, se puede dejar secar naturalmente o antes del uso del secador o planchita."
 	},
@@ -108,5 +117,23 @@
 		"name": "Matizador Violeta",
 		"description": "Ideal para tratar cabellos naranjas, canos, naturales y decolorados.",
 		"applicationMode": "Con el cabello humedo aplicar el matizador con masajes suaves. Dejar actuar por 5 minutos y enjuagar con abundante agua."
+	},
+	{
+		"id": "18",
+		"src": "scrunchies",
+		"name": "Turbantes",
+		"description": "Vinchas Scrunchies de tela estampada, no dañan ni quiebran el cabello y lo mantienen hidratado. Varios modelos. Lo que tu cabello necesita."
+	},
+	{
+		"id": "19",
+		"src": "scrunchies",
+		"name": "Turbantes Estampados",
+		"description": "Vinchas Scrunchies de tela estampada, no dañan ni quiebran el cabello y lo mantienen hidratado. Varios modelos. Lo que tu cabello necesita."
+	},
+	{
+		"id": "21",
+		"src": "scrunchies",
+		"name": "Colitas con lazo",
+		"description": "Vinchas Scrunchies de tela estampada, no dañan ni quiebran el cabello y lo mantienen hidratado. Varios modelos. Lo que tu cabello necesita."
 	}
 ]

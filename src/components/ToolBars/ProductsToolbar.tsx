@@ -1,5 +1,5 @@
 import { useAppDispatch } from "../../redux/hooks/hooksRedux";
-import { orderByName } from "../../redux/products/actions";
+import { orderByName, filterByType } from "../../redux/products/actions";
 interface Props {
 	setCurrentPage: (e: number) => void;
 	setOrder: (e: string) => void;
@@ -16,18 +16,19 @@ const ProductsToolbar = ({ setCurrentPage, setOrder }: Props): JSX.Element => {
 		}
 	};
 
-	/*const handleFilter = (e: React.ChangeEvent<HTMLSelectElement>): void => {
-		//dispatch(filterByGenre(e.target.value));
+	const handleFilter = (e: React.ChangeEvent<HTMLSelectElement>): void => {
+		dispatch(filterByType(e.target.value));
 		setCurrentPage(1);
-	};*/
+	};
 
 	return (
-		<div className="flex items-center justify-center w-full text-white">
-			<div className="flex flex-col lg:flex-row justify-around bg-toolbar text-lg lg:w-1/2 lg:h-fit p-2 rounded-3xl mb-4">
-				<div>
+		<div className="flex items-center justify-center w-full ">
+			<div className="flex flex-col w-full lg:flex-row justify-around bg-toolbar text-lg lg:w-1/2 lg:h-fit p-2 rounded-3xl mb-4">
+				<div className="text-center">
 					<span>Ordenar por</span>
 					<select
-						className="bg-gray-50 text-center border-gray-300 text-gray-900 rounded-lg  focus:ring-blue-500 focus:border-blue-500  w-full"
+						className="bg-gray-50
+						 text-center  text-gray-900 rounded-lg  focus:ring-blue-500 focus:border-blue-500  w-full"
 						onChange={(e) => {
 							handleChange(e);
 						}}
@@ -41,12 +42,18 @@ const ProductsToolbar = ({ setCurrentPage, setOrder }: Props): JSX.Element => {
 					</select>
 				</div>
 
-				<div className="filterContainer">
-					<span className="mr-4">Filtrar por:</span>
-					<select className="bg-gray-50 text-center border-gray-300 text-gray-900 rounded-lg  focus:ring-blue-500 focus:border-blue-500  w-full">
+				<div className="text-center">
+					<span>Filtrar por:</span>
+					<select
+						onChange={(e) => {
+							handleFilter(e);
+						}}
+						className="bg-gray-50
+						 text-center border-gray-300 text-gray-900 rounded-lg  focus:ring-blue-500 focus:border-blue-500  w-full"
+					>
 						<option value="EmptyFilters">Sin filtros</option>
-						<option value="balzamo">Balzamo</option>
-						<option value="banioCrema">Baños de Crema</option>
+						<option value="hairProduct">Productos</option>
+						<option value="hairAccessory">Accesorios</option>
 					</select>
 				</div>
 			</div>
@@ -55,7 +62,3 @@ const ProductsToolbar = ({ setCurrentPage, setOrder }: Props): JSX.Element => {
 };
 
 export default ProductsToolbar;
-
-/*onChange={(e) => {
-							handleFilter(e);
-						}}*/

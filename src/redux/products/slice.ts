@@ -9,6 +9,7 @@ const initialState: ProductsInterface = {
 		id: "",
 		name: "",
 		src: "",
+		type: "",
 	},
 };
 
@@ -33,6 +34,17 @@ export const productSlice = createSlice({
 				}
 				return 0;
 			});
+		},
+		filterType: (state, { payload }) => {
+			const startedProducts = state.startedProducts;
+			const productsFiltered = startedProducts.filter((product) => {
+				return product.type.includes(payload);
+			});
+			if (payload === "EmptyFilters") {
+				state.allProducts = startedProducts;
+			} else {
+				state.allProducts = productsFiltered;
+			}
 		},
 	},
 });

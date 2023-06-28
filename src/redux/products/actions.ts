@@ -14,7 +14,7 @@ export const getProducts = (): ThunkAction<
 			const data = await response.json();
 			dispatch(reducer.getProducts(data));
 		} catch (error) {
-			alert(error)
+			alert(error);
 		}
 	};
 };
@@ -24,5 +24,13 @@ export const orderByName = (
 ): ThunkAction<void, RootState, unknown, AnyAction> => {
 	return (dispatch) => {
 		dispatch(reducer.sortAlphabetically(data));
+	};
+};
+
+export const filterByType = (
+	data: string,
+): ThunkAction<void, RootState, unknown, AnyAction> => {
+	return (dispatch) => {
+		dispatch(reducer.filterType(data));
 	};
 };
