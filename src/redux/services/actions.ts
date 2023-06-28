@@ -19,7 +19,7 @@ export const getServices = (): ThunkAction<
 	};
 };
 
-export const orderServicesByName = (
+export const orderByName = (
 	data: string,
 ): ThunkAction<void, RootState, unknown, AnyAction> => {
 	return (dispatch) => {

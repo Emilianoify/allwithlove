@@ -5,7 +5,7 @@ import { getProducts } from "../../redux/products/actions";
 import { isMobile } from "../../utils/const";
 import { setLocalItems } from "../../utils/utils";
 import Paginate from "../Paginate/Paginate";
-import ToolBar from "../ToolBar/ToolBar";
+import ProductsToolbar from "../ToolBars/ProductsToolbar";
 import ProductsCard from "./ProductsCard";
 
 const Products = () => {
@@ -42,7 +42,7 @@ const Products = () => {
 			</p>
 			<div className="font-lato pl-4 md:pl-8 text-base flex flex-col">
 				<h1 className="text-2xl md:text-4xl">Productos Capilares</h1>
-				<ToolBar setCurrentPage={setCurrentPage} setOrder={setOrder} />
+				<ProductsToolbar setCurrentPage={setCurrentPage} setOrder={setOrder} />
 			</div>
 			<div className="grid grid-cols-2 gap-2 mt-4 place-items-center lg:gap-8 lg:grid lg:grid-cols-4">
 				{isMobile

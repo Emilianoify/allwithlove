@@ -1,5 +1,4 @@
 import { serviceDetails } from "../../utils/interfaces/servicesInterface";
-// Card.js
 import { BsCart } from "react-icons/bs";
 import { Link } from "react-router-dom";
 

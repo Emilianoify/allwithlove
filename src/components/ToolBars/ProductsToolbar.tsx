@@ -5,7 +5,7 @@ interface Props {
 	setOrder: (e: string) => void;
 }
 
-const ToolBar = ({ setCurrentPage, setOrder }: Props): JSX.Element => {
+const ProductsToolbar = ({ setCurrentPage, setOrder }: Props): JSX.Element => {
 	const dispatch = useAppDispatch();
 
 	const handleChange = (e: React.ChangeEvent<HTMLSelectElement>): void => {
@@ -54,7 +54,7 @@ const ToolBar = ({ setCurrentPage, setOrder }: Props): JSX.Element => {
 	);
 };
 
-export default ToolBar;
+export default ProductsToolbar;
 
 /*onChange={(e) => {
 							handleFilter(e);

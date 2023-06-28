@@ -5,8 +5,8 @@ import { getServices } from "../../redux/services/actions";
 import { isMobile } from "../../utils/const";
 import { setLocalItems } from "../../utils/utils";
 import Paginate from "../Paginate/Paginate";
-import ToolBar from "../ToolBar/ToolBar";
 import ServicesCard from "./ServicesCard";
+import ServicesToolbar from "../ToolBars/ServicesToolbar";
 
 const Services = () => {
 	const [currentPage, setCurrentPage] = useState(0);
@@ -43,7 +43,7 @@ const Services = () => {
 			</p>
 			<div className="font-lato pl-4 md:pl-8 text-base flex flex-col">
 				<h1 className="text-2xl md:text-4xl">Tratamientos Capilares</h1>
-				<ToolBar setCurrentPage={setCurrentPage} setOrder={setOrder} />
+				<ServicesToolbar setCurrentPage={setCurrentPage} setOrder={setOrder} />
 			</div>
 			<div className="grid grid-cols-2 gap-2 mt-4 place-items-center lg:gap-8 lg:grid lg:grid-cols-4">
 				{isMobile
