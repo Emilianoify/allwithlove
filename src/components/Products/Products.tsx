@@ -46,11 +46,23 @@ const Products = () => {
 			</div>
 			<div className="grid grid-cols-2 gap-2 mt-4 place-items-center lg:gap-8 lg:grid lg:grid-cols-4">
 				{isMobile
-					? mobilePosts.map(({ id, name, src }) => (
-							<ProductsCard id={id} key={id} name={name} src={src} />
+					? mobilePosts.map(({ id, name, src, type }) => (
+							<ProductsCard
+								id={id}
+								key={id}
+								name={name}
+								src={src}
+								type={type}
+							/>
 					  ))
-					: currentPosts.map(({ id, name, src }) => (
-							<ProductsCard id={id} key={id} name={name} src={src} />
+					: currentPosts.map(({ id, name, src, type }) => (
+							<ProductsCard
+								id={id}
+								key={id}
+								name={name}
+								src={src}
+								type={type}
+							/>
 					  ))}
 			</div>
 			{isMobile ? (

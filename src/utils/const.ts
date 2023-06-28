@@ -18,7 +18,6 @@ import banoAlmendras from "../assets/img/products/bañoAlmendras.png";
 import banoColageno from "../assets/img/products/bañoColageno.png";
 import banoKeratina from "../assets/img/products/bañoKeratina.png";
 import setArgan from "../assets/img/products/shampooYacondArgan.png";
-import botoxLifting from "../assets/img/products/botoxLifting.png";
 import alisadoBrasileroP from "../assets/img/products/alisadoBrasilero.png";
 import alisadoJaponesP from "../assets/img/products/alisadoJapones.png";
 //Servicios
@@ -172,7 +171,7 @@ export const products = [
 	{
 		id: "11",
 		src: setArgan,
-		name: "Shampoo/Acondicionador de Argan",
+		name: "Shampoo/Acond de Argan",
 		type: "hairProduct",
 		description:
 			"Shampoo y/o Acondicionador, limpia e hidrata en profundidad a la vez que aporta volumen, brillo, suavidad y elasticidad. Recomendado para cabellos secos, castigados y debiles.",

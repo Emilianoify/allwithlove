@@ -14,8 +14,14 @@ const Home = () => {
 					<span className="text-slate-600">Productos Populares</span>
 					<p className="text-3xl lg:text-5xl font-marcellus">Mas Vendidos</p>
 					<div className="grid grid-cols-2 gap-2 mt-4 place-items-center lg:gap-8 lg:grid lg:grid-cols-4">
-						{featuredProducts.map(({ id, name, src }) => (
-							<ProductsCard id={id} key={id} name={name} src={src} />
+						{featuredProducts.map(({ id, name, src, type }) => (
+							<ProductsCard
+								id={id}
+								key={id}
+								name={name}
+								src={src}
+								type={type}
+							/>
 						))}
 					</div>
 				</section>

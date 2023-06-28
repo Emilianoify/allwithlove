@@ -12,7 +12,9 @@ const ProductsCard = ({ id, name, src }: ProductDetails) => {
 			</Link>
 			<div className="flex flex-col h-full w-full justify-between px-2 md:p-4">
 				<div className="flex flex-col">
-					<p className="mb-2 text-2xl font-marcellus tracking-tight">{name}</p>
+					<p className="mb-2 text-2xl font-marcellus tracking-tight break-words">
+						{name}
+					</p>
 					<div className="flex-grow" />
 				</div>
 				<button
