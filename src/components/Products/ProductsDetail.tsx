@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../redux/hooks/hooksRedux";
+import { useAppSelector } from "../../redux/hooks/hooksRedux";
 import Divider from "../Divider/Divider";
 import { BsCart } from "react-icons/bs";
 
@@ -31,7 +31,7 @@ const ProductsDetail = () => {
 				<div className="w-full items-center flex flex-col lg:items-start lg:py-8">
 					<button
 						type="button"
-						className="border rounded-lg p-2 transition-all duration-200 ease-in-out hover:bg-rose-300 hover:text-white hover:font-bold"
+						className="border rounded-lg p-4 transition-all duration-200 ease-in-out hover:bg-rose-300 hover:text-white hover:font-bold"
 					>
 						<a
 							className="flex gap-2 justify-center items-center"
@@ -44,12 +44,14 @@ const ProductsDetail = () => {
 					</button>
 
 					<ul className="text-xl mt-2 font-lustria w-full text-center lg:text-left">
-						<p className="text-3xl py-2">Instrucciones de Uso</p>
-						{/*adoptionRequirements.map(({ step, text }) => (
-							<li key={step} className="py-1 text-2xl">
-								{step} {text}
-							</li>
-						))*/}
+						<p className="text-3xl py-2">Modo de uso</p>
+						{applicationMode
+							? applicationMode.split(".").map((step, i) => (
+									<li key={i + 1} className="py-1.5 text-2xl">
+										<span className="">{i + 1}</span> {step}
+									</li>
+							  ))
+							: "Este producto no posee modo de uso"}
 					</ul>
 				</div>
 			</div>

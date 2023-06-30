@@ -68,7 +68,7 @@ export const products = [
 		description:
 			"Acondiciona y disciplina el cabello sin tomarlo pesado, aportándole una textura suave, sedosa, sin frizz y con intenso brillo.",
 		applicationMode:
-			"Lava el cabello y aplicar el producto de raiz a punta, dejar actuar por 30 minutos. Pasado el tiempo indicado anteriormente, enjuague, seque y planche.",
+			"Lavar el cabello y aplicar el producto de raiz a punta. Dejar actuar por 30 minutos. Pasado el tiempo indicado anteriormente, enjuague, seque y planche.",
 	},
 	{
 		id: "2",
@@ -78,7 +78,7 @@ export const products = [
 		description:
 			"Aporta propiedades antioxidantes e hidrata el cabello. Fortacele el cuero cabelludo, nutre y da brillo desde la primera aplicacion.",
 		applicationMode:
-			"Lava el cabello y aplicar el producto de raiz a punta, dejar actuar por 30 minutos. Pasado el tiempo indicado anteriormente, enjuague, seque y planche.",
+			"Lavar el cabello y aplicar el producto de raiz a punta. Dejar actuar por 30 minutos. Pasado el tiempo indicado anteriormente, enjuague, seque y planche.",
 	},
 	{
 		id: "3",
@@ -88,7 +88,7 @@ export const products = [
 		description:
 			"Hidrata, Desenreda y Acondiciona profundamente el cabello con rulos, volviendolos dociles y manejables, protege la fibra capilar dejando el cabello suave, sedoso y brillante.",
 		applicationMode:
-			"Lava el cabello y aplicar el producto de raiz a punta, dejar actuar por 30 minutos. Pasado el tiempo indicado anteriormente, enjuague.",
+			"Lavar el cabello y aplicar el producto de raiz a punta. Dejar actuar por 30 minutos. Pasado el tiempo indicado anteriormente, enjuague.",
 	},
 	{
 		id: "4",
@@ -98,7 +98,7 @@ export const products = [
 		description:
 			"Hidrata y nutre aportando brillo y suavidad. Protege la fibra capilar evitando la rotura del cabello, fortaleciendo el mismo.",
 		applicationMode:
-			"Lava el cabello y aplicar el producto de raiz a punta, dejar actuar por 30 minutos. Pasado el tiempo indicado anteriormente, enjuague, seque y planche.",
+			"Lavar el cabello y aplicar el producto de raiz a punta. Dejar actuar por 30 minutos. Pasado el tiempo indicado anteriormente, enjuague, seque y planche.",
 	},
 	{
 		id: "5",
@@ -108,7 +108,7 @@ export const products = [
 		description:
 			"Hidrata y nutre aportando brillo y suavidad. Protege la fibra capilar evitando la rotura del cabello, fortaleciendo el mismo.",
 		applicationMode:
-			"Lava el cabello y aplicar el producto de raiz a punta, dejar actuar por 30 minutos. Pasado el tiempo indicado anteriormente, enjuague, seque y planche.",
+			"Lavar el cabello y aplicar el producto de raiz a punta. Dejar actuar por 30 minutos. Pasado el tiempo indicado anteriormente, enjuague, seque y planche.",
 	},
 	{
 		id: "6",
@@ -204,7 +204,7 @@ export const products = [
 		description:
 			"Ideal para tratar cabellos naranjas, cobres y otros matrices.",
 		applicationMode:
-			"Con el cabello humedo aplicar el matizador con masajes suaves. Dejar actuar por 5 minutos y enjuagar con abundante agua.",
+			"Con el cabello humedo aplicar el matizador con masajes suaves. Dejar actuar por 5 minutos. Enjuagar con abundante agua.",
 	},
 	{
 		id: "15",
@@ -214,7 +214,7 @@ export const products = [
 		description:
 			"Ideal para tratar cabellos rojos, naranjas, cobres y otros matrices rojos.",
 		applicationMode:
-			"Con el cabello humedo aplicar el matizador con masajes suaves. Dejar actuar por 5 minutos y enjuagar con abundante agua.",
+			"Con el cabello humedo aplicar el matizador con masajes suaves. Dejar actuar por 5 minutos. Enjuagar con abundante agua.",
 	},
 	{
 		id: "16",
@@ -224,7 +224,7 @@ export const products = [
 		description:
 			"Ideal para tratar cabellos naranjas, canos, naturales y decolorados.",
 		applicationMode:
-			"Con el cabello humedo aplicar el matizador con masajes suaves. Dejar actuar por 5 minutos y enjuagar con abundante agua.",
+			"Con el cabello humedo aplicar el matizador con masajes suaves. Dejar actuar por 5 minutos. Enjuagar con abundante agua.",
 	},
 	{
 		id: "18",
