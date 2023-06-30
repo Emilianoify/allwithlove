@@ -3,7 +3,7 @@ import efectivo from "../../assets/icons/cash.png";
 import instagram from "../../assets/icons/instagram.png";
 const Footer = () => {
 	return (
-		<footer className="bg-gradient-to-br w-full flex flex-col items-center from-rose-400 to-rose-500 text-center lg:text-left font-monserrat">
+		<footer className="bg-gradient-to-br w-full flex flex-col items-center from-rose-400 to-rose-300 text-center lg:text-left font-monserrat">
 			<div className="container p-6 text-neutral-200 text-center">
 				<div className="grid gap-4 lg:grid-cols-3">
 					<div>

@@ -1,8 +1,8 @@
-export const setLocalItems = (key: string, data: any): void => {
+export const setLocalItems = (key: string, data: unknown): void => {
 	localStorage.setItem(key, JSON.stringify(data));
 };
 
-export const getLocalItems = (key: string): any | null => {
+export const getLocalItems = (key: string): unknown | null => {
 	return localStorage.getItem(key);
 };
 

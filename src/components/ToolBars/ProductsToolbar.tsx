@@ -32,9 +32,9 @@ const ProductsToolbar = ({ setCurrentPage, setOrder }: Props): JSX.Element => {
 						onChange={(e) => {
 							handleChange(e);
 						}}
-						defaultValue="Order By:"
+						defaultValue="none"
 					>
-						<option value="none" selected disabled>
+						<option value="none" disabled>
 							Ordenar por:
 						</option>
 						<option value="A-z">A-z</option>

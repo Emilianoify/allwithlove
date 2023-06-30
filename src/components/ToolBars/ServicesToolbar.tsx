@@ -16,18 +16,13 @@ const ServicesToolbar = ({ setCurrentPage, setOrder }: Props): JSX.Element => {
 		}
 	};
 
-	/*const handleFilter = (e: React.ChangeEvent<HTMLSelectElement>): void => {
-		//dispatch(filterByGenre(e.target.value));
-		setCurrentPage(1);
-	};*/
-
 	return (
-		<div className="flex items-center justify-center w-full text-white">
-			<div className="flex flex-col lg:flex-row justify-around bg-toolbar text-lg lg:w-1/2 lg:h-fit p-2 rounded-3xl mb-4">
+		<div className="flex items-center justify-center w-full">
+			<div className="flex flex-col lg:flex-row justify-around bg-toolbar text-lg lg:w-1/2 lg:h-fit p-2 rounded-3xl mb-4 text-center">
 				<div>
 					<span>Ordenar por</span>
 					<select
-						className="bg-gray-50 text-center border-gray-300 text-gray-900 rounded-lg  focus:ring-blue-500 focus:border-blue-500  w-full"
+						className="bg-gray-100 text-center border-gray-300 text-gray-900 rounded-lg  focus:ring-blue-500 focus:border-blue-500  w-full"
 						onChange={(e) => {
 							handleChange(e);
 						}}
@@ -40,22 +35,9 @@ const ServicesToolbar = ({ setCurrentPage, setOrder }: Props): JSX.Element => {
 						<option value="Z-a">Z-a</option>
 					</select>
 				</div>
-
-				<div className="filterContainer">
-					<span className="mr-4">Filtrar por:</span>
-					<select className="bg-gray-50 text-center border-gray-300 text-gray-900 rounded-lg  focus:ring-blue-500 focus:border-blue-500  w-full">
-						<option value="EmptyFilters">Sin filtros</option>
-						<option value="balzamo">Balzamo</option>
-						<option value="banioCrema">Baños de Crema</option>
-					</select>
-				</div>
 			</div>
 		</div>
 	);
 };
 
 export default ServicesToolbar;
-
-/*onChange={(e) => {
-							handleFilter(e);
-						}}*/

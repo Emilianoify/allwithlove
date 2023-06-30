@@ -2,6 +2,7 @@ export interface ProductDetails {
 	src: string;
 	id: string;
 	description?: string;
+	applicationMode?: string;
 	name: string;
 	type: string;
 }

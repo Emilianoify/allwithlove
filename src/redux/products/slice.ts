@@ -10,6 +10,7 @@ const initialState: ProductsInterface = {
 		name: "",
 		src: "",
 		type: "",
+		applicationMode: "",
 	},
 };
 
