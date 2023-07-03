@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { products } from "../../utils/const";
 import { ProductsInterface } from "../../utils/interfaces/productsInterface";
+import Swal from "sweetalert2";
 
 const initialState: ProductsInterface = {
 	allProducts: products,
@@ -35,6 +36,22 @@ export const productSlice = createSlice({
 				}
 				return 0;
 			});
+		},
+		searchByName: (state, { payload }) => {
+			const startedProducts = state.startedProducts;
+			const productsFound = startedProducts.filter((product) => {
+				return product.name.toLowerCase().includes(payload.toLowerCase());
+			});
+			if (productsFound.length < 1) {
+				state.allProducts = startedProducts;
+				Swal.fire(
+					"Busqueda finalizada",
+					"No se han encontrado productos",
+					"info",
+				);
+			} else {
+				state.allProducts = productsFound;
+			}
 		},
 		filterType: (state, { payload }) => {
 			const startedProducts = state.startedProducts;

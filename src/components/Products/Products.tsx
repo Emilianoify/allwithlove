@@ -1,16 +1,18 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks/hooksRedux";
-import { getProducts } from "../../redux/products/actions";
+import { getProducts, searchByName } from "../../redux/products/actions";
 import { isMobile } from "../../utils/const";
 import { setLocalItems } from "../../utils/utils";
 import Paginate from "../Paginate/Paginate";
 import ProductsToolbar from "../ToolBars/ProductsToolbar";
 import ProductsCard from "./ProductsCard";
 import { AiOutlineSearch } from "react-icons/ai";
+import Swal from "sweetalert2";
 
 const Products = () => {
 	const [currentPage, setCurrentPage] = useState(0);
+	const [search, setSearch] = useState("");
 	const [order, setOrder] = useState("");
 	const dispatch = useAppDispatch();
 	const products = useAppSelector((state) => state.products.allProducts);
@@ -36,19 +38,59 @@ const Products = () => {
 		setCurrentPage(1);
 	}, [products, order]);
 
+	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+		e.preventDefault();
+		setSearch(e.target.value);
+	};
+
+	const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		if (search.length < 3) {
+			Swal.fire(
+				"Error",
+				"Por favor ingrese un nombre valido. Minimo 3 caracteres",
+				"error",
+			);
+		} else {
+			dispatch(searchByName(search));
+			setSearch("");
+			setCurrentPage(1);
+		}
+	};
+
+	const regexWhite = /^\s+$/;
+
+	const [validSearch, setValidSearch] = useState(true);
+	function validateSearch() {
+		if (regexWhite.test(search)) {
+			setValidSearch(false);
+		} else {
+			setValidSearch(true);
+		}
+	}
+	console.log(currentPosts);
 	return (
 		<div className="w-full h-full font-monserrat p-4">
 			<p className="p-4 md:p-8 text-neutral-400">
 				<Link to="/">Home</Link> / Productos
 			</p>
 			<div className="w-full pb-4 flex justify-center items-center">
-				<form className="flex border-2 p-2 rounded-xl cursor-pointer w-3/4">
+				<form
+					onSubmit={(e) => handleSearch(e)}
+					className="flex border-2 p-2 rounded-xl cursor-pointer w-3/4"
+				>
 					<input
+						value={search}
+						onChange={(e) => {
+							handleChange(e);
+						}}
+						onBlur={() => validateSearch()}
 						type="text"
 						placeholder="Buscar producto.."
 						className="border-gray-300 focus:outline-none border-r-2 w-full"
 					/>
 					<button
+						disabled={!validSearch}
 						type="submit"
 						className="w-16 items-center justify-center flex"
 					>

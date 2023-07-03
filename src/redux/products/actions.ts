@@ -19,6 +19,14 @@ export const getProducts = (): ThunkAction<
 	};
 };
 
+export const searchByName = (
+	data: string,
+): ThunkAction<void, RootState, unknown, AnyAction> => {
+	return (dispatch) => {
+		dispatch(reducer.searchByName(data));
+	};
+};
+
 export const orderByName = (
 	data: string,
 ): ThunkAction<void, RootState, unknown, AnyAction> => {
