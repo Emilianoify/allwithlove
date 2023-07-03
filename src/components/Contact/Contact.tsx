@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
 const VITE_FORM_URL = import.meta.env.VITE_FORM_URL;
+
 const Contact = () => {
 	const [input, setInput] = useState({
 		name: "",
