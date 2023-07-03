@@ -24,7 +24,7 @@ const ProductsCard = ({ id, name, src }: ProductDetails) => {
 					<a
 						className="flex gap-2 justify-center items-center"
 						target="_blank"
-						href={`https://api.whatsapp.com/send?phone=5491133111585&text=¡Hola!Estoy interesado en comprar ${name}. Por favor, envíenme más información.`}
+						href={`https://api.whatsapp.com/send?phone=5491133111585&text=¡Hola! Estoy interesado en comprar ${name}. Por favor, envíenme más información.`}
 						rel="noreferrer"
 					>
 						<BsCart /> Comprar ahora

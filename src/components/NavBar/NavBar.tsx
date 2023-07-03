@@ -79,6 +79,8 @@ const NavBar = () => {
 								{pagesMobile.map(({ id, href, name, icon }) => (
 									<li
 										key={id}
+										onClick={handleOpen}
+										onKeyUp={handleOpen}
 										className="hover:text-purple-300 border-blue-200 transition-all ease-in duration-300 hover:scale:110 flex gap-2"
 									>
 										{icon}
