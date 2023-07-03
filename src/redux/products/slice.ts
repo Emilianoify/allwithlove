@@ -40,7 +40,10 @@ export const productSlice = createSlice({
 		searchByName: (state, { payload }) => {
 			const startedProducts = state.startedProducts;
 			const productsFound = startedProducts.filter((product) => {
-				return product.name.toLowerCase().includes(payload.toLowerCase());
+				return product.name
+					.toLowerCase()
+					.trim()
+					.includes(payload.toLowerCase().trim());
 			});
 			if (productsFound.length < 1) {
 				state.allProducts = startedProducts;
