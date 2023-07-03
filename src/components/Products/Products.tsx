@@ -7,6 +7,7 @@ import { setLocalItems } from "../../utils/utils";
 import Paginate from "../Paginate/Paginate";
 import ProductsToolbar from "../ToolBars/ProductsToolbar";
 import ProductsCard from "./ProductsCard";
+import { AiOutlineSearch } from "react-icons/ai";
 
 const Products = () => {
 	const [currentPage, setCurrentPage] = useState(0);
@@ -40,6 +41,21 @@ const Products = () => {
 			<p className="p-4 md:p-8 text-neutral-400">
 				<Link to="/">Home</Link> / Productos
 			</p>
+			<div className="w-full pb-4 flex justify-center items-center">
+				<form className="flex border-2 p-2 rounded-xl cursor-pointer w-3/4">
+					<input
+						type="text"
+						placeholder="Buscar producto.."
+						className="border-gray-300 focus:outline-none border-r-2 w-full"
+					/>
+					<button
+						type="submit"
+						className="w-16 items-center justify-center flex"
+					>
+						<AiOutlineSearch size={20} />
+					</button>
+				</form>
+			</div>
 			<div className="font-lato pl-4 md:pl-8 text-base flex flex-col">
 				<h1 className="text-2xl md:text-4xl">Productos Capilares</h1>
 				<ProductsToolbar setCurrentPage={setCurrentPage} setOrder={setOrder} />

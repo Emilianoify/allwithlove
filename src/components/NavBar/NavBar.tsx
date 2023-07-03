@@ -5,7 +5,6 @@ import {
 	AiFillHome,
 	AiFillInfoCircle,
 	AiFillMail,
-	AiOutlineSearch,
 } from "react-icons/ai";
 import { GoThreeBars } from "react-icons/go";
 import { GrClose } from "react-icons/gr";
@@ -107,18 +106,6 @@ const NavBar = () => {
 							</li>
 						))}
 					</ul>
-					<form className="flex border-2 p-2 rounded-2xl cursor-pointer justify-center">
-						<input
-							type="text"
-							placeholder="Buscar producto.."
-							className="border-gray-300 focus:outline-none border-r-2 w-96"
-						/>
-						<div className="ml-2 flex items-center justify-center">
-							<button type="submit" className="w-fit">
-								<AiOutlineSearch size={20} />
-							</button>
-						</div>
-					</form>
 				</>
 			)}
 		</header>
