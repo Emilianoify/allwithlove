@@ -9,7 +9,7 @@ import {
 import { GoThreeBars } from "react-icons/go";
 import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom";
-import { isMobile, pagesName } from "../../utils/const";
+import { pagesName } from "../../utils/const";
 const NavBar = () => {
 	const [isOpen, setOpen] = useState(false);
 	const handleOpen = () => {
@@ -50,7 +50,7 @@ const NavBar = () => {
 	];
 
 	return (
-		<header className="h-20 w-full bg-white flex justify-around fixed top-0 shadow-md items-center font-monserrat animate-fade animate-once animate-duration-[1400ms]">
+		<header className="h-20 w-full bg-white flex justify-around shadow-md items-center font-monserrat animate-fade animate-once animate-duration-[1300ms]">
 			<div className="hidden justify-around w-full text-center items-center h-full lg:flex ">
 				<div className="text-center">
 					<p className="text-3xl font-bold font-dancing">AllWithLove</p>
@@ -62,7 +62,9 @@ const NavBar = () => {
 							key={id}
 							className="hover:text-purple-300 hover:border-y-4 border-purple-200 hover:scale:110 transition-all ease-in duration-300 h-full cursor-pointer text-center flex flex-col items-center justify-center"
 						>
-							<Link to={href}>{name}</Link>
+							<Link className="h-full flex items-center" to={href}>
+								{name}
+							</Link>
 						</li>
 					))}
 				</ul>
@@ -96,10 +98,12 @@ const NavBar = () => {
 									key={id}
 									onClick={handleOpen}
 									onKeyUp={handleOpen}
-									className="hover:text-purple-300 border-blue-200 transition-all ease-in duration-300 hover:scale:110 flex gap-2"
+									className="hover:text-purple-300 h-full border-blue-200 transition-all ease-in duration-300 hover:scale:110 flex gap-2"
 								>
 									{icon}
-									<Link to={href}>{name}</Link>
+									<Link className="w-full h-full" to={href}>
+										{name}
+									</Link>
 								</li>
 							))}
 						</ul>
