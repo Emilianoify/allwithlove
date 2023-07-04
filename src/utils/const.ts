@@ -20,11 +20,13 @@ import banoKeratina from "../assets/img/products/bañoKeratina.png";
 import setArgan from "../assets/img/products/shampooYacondArgan.png";
 import alisadoBrasileroP from "../assets/img/products/alisadoBrasilero.png";
 import alisadoJaponesP from "../assets/img/products/alisadoJapones.png";
+import botoxLifting from "../assets/img/products/botoxLifting.png";
 //Servicios
-import alisado from "../assets/img/servicios/alisado.jpg";
-import botox from "../assets/img/servicios/botox.jpg";
+import alisadoJP from "../assets/img/servicios/alisadoJapones.jpg";
+import alisadoBR from "../assets/img/servicios/alisadoBrasilero.jpg";
+import botox from "../assets/img/servicios/botoxEfectoLifting.jpg";
 import cauterizacion from "../assets/img/servicios/cauterizacion.jpg";
-import trenzaBox from "../assets/img/servicios/trenzabox.jpg";
+import trenzaBox from "../assets/img/servicios/trenzasBox.jpg";
 
 //
 export const isMobile = window.innerWidth < 1024;
@@ -119,7 +121,7 @@ export const products = [
 			"Scrunchies de tela estampada, no dañan ni quiebran el cabello y lo mantienen hidratado. Varios modelos. Lo que tu cabello necesita.",
 	},
 	{
-		id: "20",
+		id: "7",
 		src: scrunchiesConLazo,
 		name: "Scrunchies con lazo",
 		type: "hairAccessory",
@@ -127,7 +129,7 @@ export const products = [
 			"Scrunchies con lazo de tela estampada, no dañan ni quiebran el cabello y lo mantienen hidratado. Varios modelos. Lo que tu cabello necesita.",
 	},
 	{
-		id: "17",
+		id: "8",
 		src: vinchasScrunchies,
 		name: "Vinchas scrunchies",
 		type: "hairAccessory",
@@ -135,7 +137,7 @@ export const products = [
 			"Vinchas Scrunchies de tela estampada, no dañan ni quiebran el cabello y lo mantienen hidratado. Varios modelos. Lo que tu cabello necesita.",
 	},
 	{
-		id: "7",
+		id: "9",
 		src: protectorTermico,
 		name: "Protector Termico",
 		type: "hairProduct",
@@ -145,7 +147,7 @@ export const products = [
 			"Agitar y aplicar sobre el cabello humedo o seco, se puede dejar secar naturalmente o antes del uso del secador o planchita.",
 	},
 	{
-		id: "8",
+		id: "10",
 		src: banoAlmendras,
 		name: "Baño de Crema Almendras",
 		type: "hairProduct",
@@ -153,7 +155,7 @@ export const products = [
 			"Hidrata y nutre en profundidad, recupera el cabello dañado y reduce el encrespamiento. Define y da forma a los rulos.",
 	},
 	{
-		id: "9",
+		id: "11",
 		src: banoColageno,
 		name: "Baño de Crema Colageno",
 		type: "hairProduct",
@@ -161,7 +163,7 @@ export const products = [
 			"Estimula el cabello acelerando el crecimiento. Evita la caida del cabello brindado fuerza y suavidad, nutriendolo en profundidad.",
 	},
 	{
-		id: "10",
+		id: "12",
 		src: banoKeratina,
 		name: "Baño de Crema Keratina",
 		type: "hairProduct",
@@ -169,7 +171,7 @@ export const products = [
 			"Nutre el cabello. Aumenta el brillo y su color natural. Repara las puntas dañadas, dejando el cabello mas suave y sedoso.",
 	},
 	{
-		id: "11",
+		id: "13",
 		src: setArgan,
 		name: "Shampoo/Acond de Argan",
 		type: "hairProduct",
@@ -177,7 +179,7 @@ export const products = [
 			"Shampoo y/o Acondicionador, limpia e hidrata en profundidad a la vez que aporta volumen, brillo, suavidad y elasticidad. Recomendado para cabellos secos, castigados y debiles.",
 	},
 	{
-		id: "12",
+		id: "14",
 		src: alisadoJaponesP,
 		name: "Alisado Japones",
 		type: "hairProduct",
@@ -187,7 +189,7 @@ export const products = [
 			"Lavar el cabello con shampoo neutro. Secar un 100% y aplicar el producto. Dejar actuar entre 30 y 40 minutos. Secar completamente y planchar de 10 a 15 veces por mecha.",
 	},
 	{
-		id: "13",
+		id: "15",
 		src: alisadoBrasileroP,
 		name: "Alisado Brasilero",
 		type: "hairProduct",
@@ -197,7 +199,7 @@ export const products = [
 			"Lavar el cabello con shampoo neutro. Secar un 100% y aplicar el producto. Dejar actuar entre 30 y 40 minutos. Secar completamente y planchar de 10 a 15 veces por mecha.",
 	},
 	{
-		id: "14",
+		id: "16",
 		src: matizadorCobrizo,
 		name: "Matizador Cobrizo",
 		type: "hairProduct",
@@ -207,7 +209,7 @@ export const products = [
 			"Con el cabello humedo aplicar el matizador con masajes suaves. Dejar actuar por 5 minutos. Enjuagar con abundante agua.",
 	},
 	{
-		id: "15",
+		id: "17",
 		src: matizadorRojo,
 		name: "Matizador Rojo",
 		type: "hairProduct",
@@ -217,7 +219,7 @@ export const products = [
 			"Con el cabello humedo aplicar el matizador con masajes suaves. Dejar actuar por 5 minutos. Enjuagar con abundante agua.",
 	},
 	{
-		id: "16",
+		id: "18",
 		src: matizadorVioleta,
 		name: "Matizador Violeta",
 		type: "hairProduct",
@@ -227,7 +229,7 @@ export const products = [
 			"Con el cabello humedo aplicar el matizador con masajes suaves. Dejar actuar por 5 minutos. Enjuagar con abundante agua.",
 	},
 	{
-		id: "18",
+		id: "19",
 		src: turbantes,
 		name: "Turbantes",
 		type: "hairAccessory",
@@ -235,7 +237,7 @@ export const products = [
 			"El semiturbante es el accesorio perfecto para lucir en el día a día gracias a sus infinitas posibilidades a la hora de combinar tus looks.",
 	},
 	{
-		id: "19",
+		id: "20",
 		src: turbantesEstampados,
 		name: "Turbantes Estampados",
 		type: "hairAccessory",
@@ -250,17 +252,25 @@ export const products = [
 		description:
 			"Colitas para el cabello con lazo, para que lleves un estilazo.",
 	},
+	{
+		id: "22",
+		src: botoxLifting,
+		name: "Botox Efecto Lifting",
+		type: "hairProduct",
+		description:
+			"Colitas para el cabello con lazo, para que lleves un estilazo.",
+	},
 ];
 
 //Seleccion de productos segun pos de array para el featured
-const selectedProducts = [1, 5, 3, 20];
+const selectedProducts = [13, 21, 8, 20];
 export const featuredProducts = selectedProducts.map((pos) => products[pos]);
 
 //Servicios
 export const services = [
 	{
 		id: "1",
-		src: alisado,
+		src: alisadoJP,
 		name: "Alisado Japones",
 		description: "",
 	},
@@ -279,11 +289,17 @@ export const services = [
 	{
 		id: "4",
 		src: botox,
-		name: "Botox",
+		name: "Botox Efecto Lifting",
+		description: "",
+	},
+	{
+		id: "5",
+		src: alisadoBR,
+		name: "Alisado Brasilero",
 		description: "",
 	},
 ];
 
 //Seleccion de servicios segun pos de array para el featured
-const selectedServices = [0, 1, 2, 3];
+const selectedServices = [0, 1, 3, 4];
 export const featuredServices = selectedServices.map((pos) => services[pos]);
