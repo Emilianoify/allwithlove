@@ -1,7 +1,7 @@
-import { useParams } from "react-router-dom";
 import { useAppSelector } from "../../redux/hooks/hooksRedux";
 import Divider from "../Divider/Divider";
 import { BsCart } from "react-icons/bs";
+import { useParams } from "react-router-dom";
 
 const ProductsDetail = () => {
 	const { id } = useParams();
@@ -31,7 +31,7 @@ const ProductsDetail = () => {
 				<div className="w-full items-center flex flex-col lg:items-start lg:py-8">
 					<button
 						type="button"
-						className="w-full lg:w-fit border rounded-lg p-4 transition-all duration-200 ease-in-out hover:bg-rose-300 hover:text-white hover:font-bold"
+						className="w-full border rounded-lg p-4 mt-4 transition-all duration-200 ease-in-out lg:mt-0 lg:w-fit hover:bg-rose-300 hover:text-white hover:font-bold"
 					>
 						<a
 							className="flex gap-2 justify-center items-center"
