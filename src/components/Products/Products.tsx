@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks/hooksRedux";
 import { getProducts, searchByName } from "../../redux/products/actions";
 import { isMobile } from "../../utils/const";
@@ -7,7 +5,9 @@ import { setLocalItems } from "../../utils/utils";
 import Paginate from "../Paginate/Paginate";
 import ProductsToolbar from "../ToolBars/ProductsToolbar";
 import ProductsCard from "./ProductsCard";
+import React, { useEffect, useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const Products = () => {
@@ -68,7 +68,7 @@ const Products = () => {
 			setValidSearch(true);
 		}
 	}
-	console.log(currentPosts);
+
 	return (
 		<div className="w-full h-full font-monserrat p-4">
 			<p className="p-4 md:p-8 text-neutral-400">
